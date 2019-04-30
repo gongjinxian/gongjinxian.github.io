@@ -1,0 +1,439 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>用户推荐</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/用户推荐/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/用户推荐/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (矩形) -->
+      <div id="u516" class="ax_default _一级标题">
+        <div id="u516_div" class=""></div>
+        <div id="u516_text" class="text ">
+          <p><span>兼职医生增加候诊大厅</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u517" class="ax_default" data-left="477" data-top="152" data-width="520" data-height="900">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u518" class="ax_default shape">
+          <div id="u518_div" class=""></div>
+          <div id="u518_text" class="text ">
+            <p style="font-size:17px;line-height:normal;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">1.兼职医生用户推荐策略：</span></p><p style="font-size:14px;line-height:normal;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#A1A1A1;">3G用户进入落地页跳转至快应用，快应用已登录用户(已选科室）</span></p><p style="font-size:14px;line-height:28px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#999999;">当科室有新用户进入，会随机分配给当前在线医生。用户会直接显示在医生消息列表中。</span></p><p style="font-size:14px;line-height:28px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#999999;">当医生</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#FF0000;">未回复的的用户&gt;=5</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#999999;">时，禁止给此医生分配用户。</span></p><p style="font-size:14px;line-height:28px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#999999;">当医生</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#FF0000;">未回复的用户&lt;5</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#999999;">时，允许给此医生分配新用户。</span></p><p style="font-size:14px;line-height:28px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#999999;">这时如果所有</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#FF0000;">在线医生未回复用户都&gt;5</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#999999;">时，多余出来的用户，自动进入</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#000000;">候诊大厅，用户按照最新时间排序</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#999999;">。</span></p><p style="font-size:14px;line-height:28px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#FF0000;"><br></span></p><p style="font-size:14px;line-height:28px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#999999;">医生点击用户后，进入用户消息详情页。这时此用户自动在候诊大厅删除。</span></p><p style="font-size:14px;line-height:28px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#999999;"><br></span></p><p style="font-size:14px;line-height:28px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#FF0000;">同一时期刷到此用户的医生：</span></p><p style="font-size:14px;line-height:28px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#999999;">点进此用户。</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#000000;">弹出Toast：此患者已被其他医生锁定。</span></p><p style="font-size:14px;line-height:28px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#999999;">其他医生即使进入到患者沟通页，输入第一句话的时，</span></p><p style="font-size:14px;line-height:28px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#999999;">判断用户是否被其他医生锁定。如果被锁定。</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#000000;">提示Toast：此患者已被其他医生锁定。并且自动返回候诊大厅页。</span></p><p style="font-size:14px;line-height:28px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#FF0000;">抢到此用户的医生：</span></p><p style="font-size:14px;line-height:28px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#999999;">锁定时间为10秒，超过10秒医生未沟通患者，此用户自动释放。重新进行分配。</span></p><p style="font-size:14px;line-height:28px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#00CC66;">医生在10秒内和用户说第一句话时需要判断（此判断需要开发确认技术难度）</span></p><p style="font-size:14px;line-height:28px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#00CC66;">是否已和其他医生进行聊天。如果已开始聊天，</span></p><p style="font-size:14px;line-height:28px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#00CC66;">则弹出Toast：此患者已被其他医生锁定。</span></p><p style="font-size:14px;line-height:28px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#999999;"><br></span></p><p style="font-size:14px;line-height:28px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#000000;"><br></span></p><p style="font-size:14px;line-height:28px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#999999;">候诊大厅的用户，2分钟后如果没有医生接诊。那么自动推给符合推荐策略的医生。</span></p><p style="font-size:16px;line-height:28px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:rgba(0, 0, 0, 0.647058823529412);"><br></span></p><p style="font-size:14px;line-height:28px;"><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#999999;"><br></span></p><p style="font-size:14px;line-height:28px;"><span style="font-family:'Helvetica';color:#999999;"><br></span></p><p style="font-size:14px;line-height:28px;"><span style="font-family:'Helvetica';color:#999999;"><br></span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u519" class="ax_default" data-left="30" data-top="87" data-width="430" data-height="1065">
+
+        <!-- Unnamed (组合) -->
+        <div id="u520" class="ax_default" data-left="30" data-top="87" data-width="430" data-height="1065">
+
+          <!-- Unnamed (组合) -->
+          <div id="u521" class="ax_default" data-left="30" data-top="87" data-width="430" data-height="1065">
+
+            <!-- XMLID_42_ (形状) -->
+            <div id="u522" class="ax_default _形状1" data-label="XMLID_42_">
+              <img id="u522_img" class="img " src="images/首页/xmlid_42__u219.png"/>
+            </div>
+
+            <!-- XMLID_42_ (形状) -->
+            <div id="u523" class="ax_default _形状1" data-label="XMLID_42_">
+              <img id="u523_img" class="img " src="images/用户推荐/xmlid_42__u523.png"/>
+            </div>
+
+            <!-- XMLID_39_ (形状) -->
+            <div id="u524" class="ax_default _形状1" data-label="XMLID_39_">
+              <img id="u524_img" class="img " src="images/首页/xmlid_39__u221.png"/>
+            </div>
+
+            <!-- XMLID_36_ (形状) -->
+            <div id="u525" class="ax_default _形状1" data-label="XMLID_36_">
+              <img id="u525_img" class="img " src="images/首页/xmlid_36__u222.png"/>
+            </div>
+
+            <!-- XMLID_33_ (形状) -->
+            <div id="u526" class="ax_default _形状1" data-label="XMLID_33_">
+              <img id="u526_img" class="img " src="images/首页/xmlid_33__u223.png"/>
+            </div>
+
+            <!-- XMLID_30_ (形状) -->
+            <div id="u527" class="ax_default _形状1" data-label="XMLID_30_">
+              <img id="u527_img" class="img " src="images/首页/xmlid_30__u224.png"/>
+            </div>
+
+            <!-- XMLID_27_ (形状) -->
+            <div id="u528" class="ax_default _形状1" data-label="XMLID_27_">
+              <img id="u528_img" class="img " src="images/用户推荐/xmlid_27__u528.png"/>
+            </div>
+
+            <!-- XMLID_24_ (形状) -->
+            <div id="u529" class="ax_default _形状1" data-label="XMLID_24_">
+              <img id="u529_img" class="img " src="images/用户推荐/xmlid_24__u529.png"/>
+            </div>
+
+            <!-- XMLID_16_ (矩形) -->
+            <div id="u530" class="ax_default _形状1" data-label="XMLID_16_">
+              <div id="u530_div" class=""></div>
+            </div>
+          </div>
+
+          <!-- BG (矩形) -->
+          <div id="u531" class="ax_default" data-label="BG">
+            <div id="u531_div" class=""></div>
+          </div>
+
+          <!-- Rectangle 3 (矩形) -->
+          <div id="u532" class="ax_default _形状1" data-label="Rectangle 3">
+            <div id="u532_div" class=""></div>
+          </div>
+
+          <!-- Combined Shape (形状) -->
+          <div id="u533" class="ax_default _形状1" data-label="Combined Shape">
+            <img id="u533_img" class="img " src="images/首页/combined_shape_u230.png"/>
+          </div>
+
+          <!-- Rectangle Copy 4 (矩形) -->
+          <div id="u534" class="ax_default" data-label="Rectangle Copy 4">
+            <div id="u534_div" class=""></div>
+          </div>
+
+          <!-- 100% (矩形) -->
+          <div id="u535" class="ax_default" data-label="100%">
+            <div id="u535_div" class=""></div>
+            <div id="u535_text" class="text ">
+              <p><span>100%</span></p>
+            </div>
+          </div>
+
+          <!-- bluetooth (形状) -->
+          <div id="u536" class="ax_default _形状1" data-label="bluetooth">
+            <img id="u536_img" class="img " src="images/首页/bluetooth_u233.png"/>
+          </div>
+
+          <!-- Time (矩形) -->
+          <div id="u537" class="ax_default" data-label="Time">
+            <div id="u537_div" class=""></div>
+            <div id="u537_text" class="text ">
+              <p><span>9:41 AM</span></p>
+            </div>
+          </div>
+
+          <!-- Mobile Signal (形状) -->
+          <div id="u538" class="ax_default _形状1" data-label="Mobile Signal">
+            <img id="u538_img" class="img " src="images/首页/mobile_signal_u235.png"/>
+          </div>
+
+          <!-- Unnamed (形状) -->
+          <div id="u539" class="ax_default icon">
+            <img id="u539_img" class="img " src="images/首页/u236.png"/>
+          </div>
+
+          <!-- Unnamed (矩形) -->
+          <div id="u540" class="ax_default box_3">
+            <div id="u540_div" class=""></div>
+            <div id="u540_text" class="text ">
+              <p><span>候诊大厅</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (形状) -->
+          <div id="u541" class="ax_default box_3">
+            <img id="u541_img" class="img " src="images/首页/u466.png"/>
+          </div>
+        </div>
+
+        <!-- Unnamed (组合) -->
+        <div id="u542" class="ax_default" data-left="56" data-top="986" data-width="375" data-height="50">
+
+          <!-- Unnamed (矩形) -->
+          <div id="u543" class="ax_default box_2">
+            <div id="u543_div" class=""></div>
+          </div>
+
+          <!-- Unnamed (形状) -->
+          <div id="u544" class="ax_default box_1">
+            <img id="u544_img" class="img " src="images/用户推荐/u544.png"/>
+          </div>
+
+          <!-- Unnamed (文本框) -->
+          <div id="u545" class="ax_default text_field">
+            <input id="u545_input" type="text" value=""/>
+          </div>
+
+          <!-- Unnamed (图片) -->
+          <div id="u546" class="ax_default _图片1">
+            <img id="u546_img" class="img " src="images/用户推荐/u546.png"/>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u547" class="ax_default box_1">
+          <div id="u547_div" class=""></div>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u548" class="ax_default" data-left="56" data-top="219" data-width="375" data-height="60">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u549" class="ax_default refs-webm-wechat">
+          <img id="u549_img" class="img " src="images/用户推荐/u549.png"/>
+        </div>
+
+        <!-- Unnamed (图片) -->
+        <div id="u550" class="ax_default image1">
+          <img id="u550_img" class="img " src="images/首页/u114.jpg"/>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u551" class="ax_default refs-webm-wechat">
+          <div id="u551_div" class=""></div>
+          <div id="u551_text" class="text ">
+            <p><span>会员1111</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u552" class="ax_default refs-webm-wechat">
+          <div id="u552_div" class=""></div>
+          <div id="u552_text" class="text ">
+            <p><span>高血压</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u553" class="ax_default refs-webm-wechat">
+          <div id="u553_div" class=""></div>
+          <div id="u553_text" class="text ">
+            <p><span>河北 石家庄</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u554" class="ax_default" data-left="56" data-top="280" data-width="375" data-height="60">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u555" class="ax_default refs-webm-wechat">
+          <div id="u555_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (图片) -->
+        <div id="u556" class="ax_default image1">
+          <img id="u556_img" class="img " src="images/首页/u114.jpg"/>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u557" class="ax_default refs-webm-wechat">
+          <div id="u557_div" class=""></div>
+          <div id="u557_text" class="text ">
+            <p><span>会员1111</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u558" class="ax_default refs-webm-wechat">
+          <div id="u558_div" class=""></div>
+          <div id="u558_text" class="text ">
+            <p><span>高血压</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u559" class="ax_default refs-webm-wechat">
+          <div id="u559_div" class=""></div>
+          <div id="u559_text" class="text ">
+            <p><span>河北 石家庄</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (椭圆形) -->
+        <div id="u560" class="ax_default ellipse">
+          <img id="u560_img" class="img " src="images/用户推荐/u560.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u561" class="ax_default" data-left="56" data-top="340" data-width="375" data-height="60">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u562" class="ax_default refs-webm-wechat">
+          <img id="u562_img" class="img " src="images/用户推荐/u549.png"/>
+        </div>
+
+        <!-- Unnamed (图片) -->
+        <div id="u563" class="ax_default image1">
+          <img id="u563_img" class="img " src="images/首页/u114.jpg"/>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u564" class="ax_default refs-webm-wechat">
+          <div id="u564_div" class=""></div>
+          <div id="u564_text" class="text ">
+            <p><span>会员1111</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u565" class="ax_default refs-webm-wechat">
+          <div id="u565_div" class=""></div>
+          <div id="u565_text" class="text ">
+            <p><span>高血压</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u566" class="ax_default refs-webm-wechat">
+          <div id="u566_div" class=""></div>
+          <div id="u566_text" class="text ">
+            <p><span>河北 石家庄</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u567" class="ax_default" data-left="56" data-top="399" data-width="375" data-height="60">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u568" class="ax_default refs-webm-wechat">
+          <img id="u568_img" class="img " src="images/用户推荐/u549.png"/>
+        </div>
+
+        <!-- Unnamed (图片) -->
+        <div id="u569" class="ax_default image1">
+          <img id="u569_img" class="img " src="images/首页/u114.jpg"/>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u570" class="ax_default refs-webm-wechat">
+          <div id="u570_div" class=""></div>
+          <div id="u570_text" class="text ">
+            <p><span>会员1111</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u571" class="ax_default refs-webm-wechat">
+          <div id="u571_div" class=""></div>
+          <div id="u571_text" class="text ">
+            <p><span>高血压</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u572" class="ax_default refs-webm-wechat">
+          <div id="u572_div" class=""></div>
+          <div id="u572_text" class="text ">
+            <p><span>河北 石家庄</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u573" class="ax_default" data-left="56" data-top="459" data-width="375" data-height="60">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u574" class="ax_default refs-webm-wechat">
+          <img id="u574_img" class="img " src="images/用户推荐/u549.png"/>
+        </div>
+
+        <!-- Unnamed (图片) -->
+        <div id="u575" class="ax_default image1">
+          <img id="u575_img" class="img " src="images/首页/u114.jpg"/>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u576" class="ax_default refs-webm-wechat">
+          <div id="u576_div" class=""></div>
+          <div id="u576_text" class="text ">
+            <p><span>会员1111</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u577" class="ax_default refs-webm-wechat">
+          <div id="u577_div" class=""></div>
+          <div id="u577_text" class="text ">
+            <p><span>高血压</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u578" class="ax_default refs-webm-wechat">
+          <div id="u578_div" class=""></div>
+          <div id="u578_text" class="text ">
+            <p><span>河北 石家庄</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u579" class="ax_default label1">
+        <div id="u579_div" class=""></div>
+        <div id="u579_text" class="text ">
+          <p><span>已回</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u580" class="ax_default" data-left="56" data-top="519" data-width="375" data-height="60">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u581" class="ax_default refs-webm-wechat">
+          <img id="u581_img" class="img " src="images/用户推荐/u549.png"/>
+        </div>
+
+        <!-- Unnamed (图片) -->
+        <div id="u582" class="ax_default image1">
+          <img id="u582_img" class="img " src="images/首页/u114.jpg"/>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u583" class="ax_default refs-webm-wechat">
+          <div id="u583_div" class=""></div>
+          <div id="u583_text" class="text ">
+            <p><span>会员1111</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u584" class="ax_default refs-webm-wechat">
+          <div id="u584_div" class=""></div>
+          <div id="u584_text" class="text ">
+            <p><span>高血压</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u585" class="ax_default refs-webm-wechat">
+          <div id="u585_div" class=""></div>
+          <div id="u585_text" class="text ">
+            <p><span>河北 石家庄</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
