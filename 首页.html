@@ -10235,7 +10235,7 @@
       <div id="u1642" class="ax_default shape">
         <div id="u1642_div" class=""></div>
         <div id="u1642_text" class="text ">
-          <p style="font-size:16px;"><span style="color:rgba(0, 0, 0, 0.647058823529412);">消息页：沟通中，新用户，已结束：</span></p><p style="font-size:14px;"><span style="color:rgba(40, 40, 40, 0.647058823529412);">沟通中显示正在沟通的人数。有新消息在tab栏提示消息红点。</span></p><p style="font-size:16px;"><span style="color:rgba(0, 0, 0, 0.647058823529412);">沟通中：</span></p><p style="font-size:14px;"><span style="color:#FF0000;">已经付费的用户置顶，按照聊天时间倒序排列。</span></p><p style="font-size:14px;"><span style="color:rgba(255, 0, 0, 0.647058823529412);">然后筛选出免费订单中有沟通轮次的患者，按照聊天时间倒序排列。</span></p><p style="font-size:14px;"><span style="color:rgba(40, 40, 40, 0.647058823529412);">当免费轮次剩余1轮时，轮次为红色凸现，字号变大</span></p><p style="font-size:14px;"><span style="color:rgba(40, 40, 40, 0.647058823529412);">当大于1轮时，字体颜色普通。</span></p><p style="font-size:14px;"><span style="color:rgba(40, 40, 40, 0.647058823529412);">付费用户显示付费金额。</span></p><p style="font-size:14px;"><span style="color:rgba(255, 0, 0, 0.647058823529412);"><br></span></p><p style="font-size:16px;"><span style="color:rgba(0, 0, 0, 0.647058823529412);">新用户：</span></p><p style="font-size:14px;"><span style="color:rgba(255, 0, 0, 0.647058823529412);">没有实际进行沟通的患者，按照聊天时间倒序排列</span></p><p style="font-size:14px;"><span style="color:rgba(40, 40, 40, 0.647058823529412);"><br></span></p><p style="font-size:16px;"><span style="color:rgba(40, 40, 40, 0.647058823529412);">分配规则更新：</span></p><p style="font-size:14px;"><span style="color:rgba(40, 40, 40, 0.647058823529412);">新用户未和推荐医生产生沟通轮次，只能自选一位医生进行沟通。如果和此自选医生进行沟通，即使医生未回复，也无法继续免费选择其他医生、</span></p><p style="font-size:14px;"><span style="color:rgba(255, 0, 0, 0.647058823529412);">注意：如果新用户自动发起和非推荐医生沟通，且非推荐医生比推荐医生回复更早。则在推荐医生聊天页自动删除此患者，反之在非推荐医生聊天页自动删除此患者</span></p><p style="font-size:14px;"><span style="color:rgba(40, 40, 40, 0.647058823529412);"><br></span></p><p style="font-size:16px;"><span style="color:rgba(0, 0, 0, 0.647058823529412);"><br></span></p><p style="font-size:14px;"><span style="color:#999999;"><br></span></p><p style="font-size:14px;"><span style="color:#999999;"><br></span></p>
+          <p style="font-size:16px;"><span style="color:rgba(0, 0, 0, 0.647058823529412);">消息页：沟通中，新用户，已结束：</span></p><p style="font-size:14px;"><span style="color:rgba(40, 40, 40, 0.647058823529412);">沟通中显示正在沟通的人数。有新消息在tab栏提示消息红点。</span></p><p style="font-size:16px;"><span style="color:rgba(0, 0, 0, 0.647058823529412);">沟通中：</span></p><p style="font-size:14px;"><span style="color:#FF0000;">已经付费的用户置顶，按照聊天时间倒序排列。</span></p><p style="font-size:14px;"><span style="color:rgba(255, 0, 0, 0.647058823529412);">然后筛选出免费订单中有沟通记录的患者，按照聊天时间倒序排列。</span></p><p style="font-size:14px;"><span style="color:rgba(40, 40, 40, 0.647058823529412);">当免费轮次剩余1轮时，轮次为红色凸现，字号变大</span></p><p style="font-size:14px;"><span style="color:rgba(40, 40, 40, 0.647058823529412);">当大于1轮时，字体颜色普通。</span></p><p style="font-size:14px;"><span style="color:rgba(40, 40, 40, 0.647058823529412);">付费用户显示付费金额。</span></p><p style="font-size:14px;"><span style="color:rgba(255, 0, 0, 0.647058823529412);"><br></span></p><p style="font-size:16px;"><span style="color:rgba(0, 0, 0, 0.647058823529412);">新用户：</span></p><p style="font-size:14px;"><span style="color:rgba(255, 0, 0, 0.647058823529412);">没有实际进行沟通的患者，按照聊天时间倒序排列，患者和医生只要一方有发送消息，用户自动进入沟通中。</span></p><p style="font-size:14px;"><span style="color:rgba(255, 0, 0, 0.647058823529412);">新用户按照进入时间算起，超过24小时未有聊天记录。患者在新用户列表自动删除，不会进入到已结束页。</span></p><p style="font-size:14px;"><span style="color:rgba(255, 0, 0, 0.647058823529412);"><br></span></p><p style="font-size:14px;"><span style="color:rgba(255, 0, 0, 0.647058823529412);">新用户接口更新：接口按照pagesize和pagenum进行分页。需要前端每次请求后，优先把接口标识为在线的用户筛选出并按照时间排序。其次显示离线用户。有新数据后合并插入，重新根据在现和离线状态进行排序。</span></p><p style="font-size:14px;"><span style="color:rgba(40, 40, 40, 0.647058823529412);"><br></span></p><p style="font-size:16px;"><span style="color:rgba(40, 40, 40, 0.647058823529412);">分配规则更新：</span></p><p style="font-size:14px;"><span style="color:rgba(40, 40, 40, 0.647058823529412);">新用户未和推荐医生产生沟通轮次，只能自选一位医生进行沟通。如果和此自选医生进行沟通，即使医生未回复，也无法继续免费选择其他医生、</span></p><p style="font-size:14px;"><span style="color:rgba(255, 0, 0, 0.647058823529412);">注意：如果新用户自动发起和非推荐医生沟通，且非推荐医生比推荐医生回复更早。则在推荐医生聊天页自动删除此患者，反之在非推荐医生聊天页自动删除此患者</span></p><p style="font-size:14px;"><span style="color:rgba(40, 40, 40, 0.647058823529412);"><br></span></p><p style="font-size:16px;"><span style="color:rgba(0, 0, 0, 0.647058823529412);"><br></span></p><p style="font-size:14px;"><span style="color:#999999;"><br></span></p><p style="font-size:14px;"><span style="color:#999999;"><br></span></p>
         </div>
       </div>
 
@@ -11041,13 +11041,13 @@
       </div>
 
       <!-- Unnamed (组合) -->
-      <div id="u1774" class="ax_default ax_default_hidden" style="display:none; visibility: hidden" data-left="0" data-top="0" data-width="0" data-height="0">
+      <div id="u1774" class="ax_default" data-left="1788" data-top="4171" data-width="430" data-height="850">
 
         <!-- Unnamed (组合) -->
-        <div id="u1775" class="ax_default" data-left="0" data-top="0" data-width="0" data-height="0">
+        <div id="u1775" class="ax_default" data-left="1788" data-top="4171" data-width="430" data-height="850">
 
           <!-- Unnamed (组合) -->
-          <div id="u1776" class="ax_default" data-left="0" data-top="0" data-width="0" data-height="0">
+          <div id="u1776" class="ax_default" data-left="1788" data-top="4171" data-width="430" data-height="850">
 
             <!-- XMLID_42_ (形状) -->
             <div id="u1777" class="ax_default _形状1" data-label="XMLID_42_">
@@ -11162,17 +11162,17 @@
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u1797" class="ax_default box_2 ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u1797" class="ax_default box_2">
         <div id="u1797_div" class=""></div>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u1798" class="ax_default refs-webm-wechat ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u1798" class="ax_default refs-webm-wechat">
         <div id="u1798_div" class=""></div>
       </div>
 
       <!-- Unnamed (组合) -->
-      <div id="u1799" class="ax_default ax_default_hidden" style="display:none; visibility: hidden" data-left="0" data-top="0" data-width="0" data-height="0">
+      <div id="u1799" class="ax_default" data-left="1813" data-top="4525" data-width="375" data-height="96">
 
         <!-- Unnamed (矩形) -->
         <div id="u1800" class="ax_default refs-webm-wechat">
@@ -11234,7 +11234,7 @@
       </div>
 
       <!-- Unnamed (组合) -->
-      <div id="u1808" class="ax_default ax_default_hidden" style="display:none; visibility: hidden" data-left="0" data-top="0" data-width="0" data-height="0">
+      <div id="u1808" class="ax_default" data-left="1813" data-top="4623" data-width="375" data-height="96">
 
         <!-- Unnamed (矩形) -->
         <div id="u1809" class="ax_default refs-webm-wechat">
@@ -11296,7 +11296,7 @@
       </div>
 
       <!-- Unnamed (组合) -->
-      <div id="u1817" class="ax_default ax_default_hidden" style="display:none; visibility: hidden" data-left="0" data-top="0" data-width="0" data-height="0">
+      <div id="u1817" class="ax_default" data-left="1813" data-top="4722" data-width="375" data-height="96">
 
         <!-- Unnamed (矩形) -->
         <div id="u1818" class="ax_default refs-webm-wechat">
@@ -11358,7 +11358,7 @@
       </div>
 
       <!-- Unnamed (组合) -->
-      <div id="u1826" class="ax_default ax_default_hidden" style="display:none; visibility: hidden" data-left="0" data-top="0" data-width="0" data-height="0">
+      <div id="u1826" class="ax_default" data-left="1813" data-top="4427" data-width="375" data-height="96">
 
         <!-- Unnamed (矩形) -->
         <div id="u1827" class="ax_default refs-webm-wechat">
@@ -11412,13 +11412,13 @@
       </div>
 
       <!-- Unnamed (组合) -->
-      <div id="u1834" class="ax_default ax_default_hidden" style="display:none; visibility: hidden" data-left="0" data-top="0" data-width="0" data-height="0">
+      <div id="u1834" class="ax_default" data-left="2266" data-top="4171" data-width="430" data-height="867">
 
         <!-- Unnamed (组合) -->
-        <div id="u1835" class="ax_default" data-left="0" data-top="0" data-width="0" data-height="0">
+        <div id="u1835" class="ax_default" data-left="2266" data-top="4171" data-width="430" data-height="867">
 
           <!-- Unnamed (组合) -->
-          <div id="u1836" class="ax_default" data-left="0" data-top="0" data-width="0" data-height="0">
+          <div id="u1836" class="ax_default" data-left="2266" data-top="4171" data-width="430" data-height="867">
 
             <!-- XMLID_42_ (形状) -->
             <div id="u1837" class="ax_default _形状1" data-label="XMLID_42_">
@@ -11533,17 +11533,17 @@
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u1857" class="ax_default box_2 ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u1857" class="ax_default box_2">
         <div id="u1857_div" class=""></div>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u1858" class="ax_default refs-webm-wechat ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u1858" class="ax_default refs-webm-wechat">
         <div id="u1858_div" class=""></div>
       </div>
 
       <!-- Unnamed (组合) -->
-      <div id="u1859" class="ax_default ax_default_hidden" style="display:none; visibility: hidden" data-left="0" data-top="0" data-width="0" data-height="0">
+      <div id="u1859" class="ax_default" data-left="2294" data-top="4520" data-width="375" data-height="96">
 
         <!-- Unnamed (矩形) -->
         <div id="u1860" class="ax_default refs-webm-wechat">
@@ -11597,7 +11597,7 @@
       </div>
 
       <!-- Unnamed (组合) -->
-      <div id="u1867" class="ax_default ax_default_hidden" style="display:none; visibility: hidden" data-left="0" data-top="0" data-width="0" data-height="0">
+      <div id="u1867" class="ax_default" data-left="2294" data-top="4618" data-width="375" data-height="96">
 
         <!-- Unnamed (矩形) -->
         <div id="u1868" class="ax_default refs-webm-wechat">
@@ -11651,7 +11651,7 @@
       </div>
 
       <!-- Unnamed (组合) -->
-      <div id="u1875" class="ax_default ax_default_hidden" style="display:none; visibility: hidden" data-left="0" data-top="0" data-width="0" data-height="0">
+      <div id="u1875" class="ax_default" data-left="2294" data-top="4717" data-width="375" data-height="96">
 
         <!-- Unnamed (矩形) -->
         <div id="u1876" class="ax_default refs-webm-wechat">
@@ -11705,7 +11705,7 @@
       </div>
 
       <!-- Unnamed (组合) -->
-      <div id="u1883" class="ax_default ax_default_hidden" style="display:none; visibility: hidden" data-left="0" data-top="0" data-width="0" data-height="0">
+      <div id="u1883" class="ax_default" data-left="2294" data-top="4422" data-width="375" data-height="96">
 
         <!-- Unnamed (矩形) -->
         <div id="u1884" class="ax_default refs-webm-wechat">
@@ -11759,7 +11759,7 @@
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u1891" class="ax_default box_2 ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u1891" class="ax_default box_2">
         <div id="u1891_div" class=""></div>
         <div id="u1891_text" class="text ">
           <p><span>专家团</span></p>
@@ -11767,7 +11767,7 @@
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u1892" class="ax_default box_2 ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u1892" class="ax_default box_2">
         <div id="u1892_div" class=""></div>
         <div id="u1892_text" class="text ">
           <p><span>2元</span></p>
@@ -11775,7 +11775,7 @@
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u1893" class="ax_default box_2 ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u1893" class="ax_default box_2">
         <div id="u1893_div" class=""></div>
         <div id="u1893_text" class="text ">
           <p><span>2元</span></p>
@@ -11783,7 +11783,7 @@
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u1894" class="ax_default box_2 ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u1894" class="ax_default box_2">
         <div id="u1894_div" class=""></div>
         <div id="u1894_text" class="text ">
           <p><span>2元</span></p>
@@ -11791,7 +11791,7 @@
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u1895" class="ax_default box_2 ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u1895" class="ax_default box_2">
         <div id="u1895_div" class=""></div>
         <div id="u1895_text" class="text ">
           <p><span>2元</span></p>
@@ -11799,10 +11799,10 @@
       </div>
 
       <!-- Unnamed (组合) -->
-      <div id="u1896" class="ax_default ax_default_hidden" style="display:none; visibility: hidden" data-left="0" data-top="0" data-width="0" data-height="0">
+      <div id="u1896" class="ax_default" data-left="1814" data-top="4842" data-width="375" data-height="59">
 
         <!-- Unnamed (组合) -->
-        <div id="u1897" class="ax_default" data-left="0" data-top="0" data-width="0" data-height="0">
+        <div id="u1897" class="ax_default" data-left="1814" data-top="4842" data-width="375" data-height="59">
 
           <!-- Unnamed (矩形) -->
           <div id="u1898" class="ax_default box_3">
@@ -11851,10 +11851,10 @@
       </div>
 
       <!-- Unnamed (组合) -->
-      <div id="u1905" class="ax_default ax_default_hidden" style="display:none; visibility: hidden" data-left="0" data-top="0" data-width="0" data-height="0">
+      <div id="u1905" class="ax_default" data-left="2292" data-top="4859" data-width="375" data-height="59">
 
         <!-- Unnamed (组合) -->
-        <div id="u1906" class="ax_default" data-left="0" data-top="0" data-width="0" data-height="0">
+        <div id="u1906" class="ax_default" data-left="2292" data-top="4859" data-width="375" data-height="59">
 
           <!-- Unnamed (矩形) -->
           <div id="u1907" class="ax_default box_3">
@@ -11903,7 +11903,7 @@
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u1914" class="ax_default refs-webm-wechat ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u1914" class="ax_default refs-webm-wechat">
         <div id="u1914_div" class=""></div>
         <div id="u1914_text" class="text ">
           <p><span>剩余3轮</span></p>
@@ -11911,7 +11911,7 @@
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u1915" class="ax_default refs-webm-wechat ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u1915" class="ax_default refs-webm-wechat">
         <div id="u1915_div" class=""></div>
         <div id="u1915_text" class="text ">
           <p><span>剩余3轮</span></p>
@@ -11919,7 +11919,7 @@
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u1916" class="ax_default refs-webm-wechat ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u1916" class="ax_default refs-webm-wechat">
         <div id="u1916_div" class=""></div>
         <div id="u1916_text" class="text ">
           <p><span>剩余3轮</span></p>
@@ -11927,33 +11927,33 @@
       </div>
 
       <!-- Unnamed (椭圆形) -->
-      <div id="u1917" class="ax_default refs-webm-wechat ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u1917" class="ax_default refs-webm-wechat">
         <img id="u1917_img" class="img " src="images/首页/regen/u1917.png"/>
       </div>
 
       <!-- Unnamed (椭圆形) -->
-      <div id="u1918" class="ax_default refs-webm-wechat ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u1918" class="ax_default refs-webm-wechat">
         <img id="u1918_img" class="img " src="images/首页/regen/u1918.png"/>
       </div>
 
       <!-- Unnamed (椭圆形) -->
-      <div id="u1919" class="ax_default refs-webm-wechat ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u1919" class="ax_default refs-webm-wechat">
         <img id="u1919_img" class="img " src="images/首页/regen/u1919.png"/>
       </div>
 
       <!-- Unnamed (椭圆形) -->
-      <div id="u1920" class="ax_default refs-webm-wechat ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u1920" class="ax_default refs-webm-wechat">
         <img id="u1920_img" class="img " src="images/首页/regen/u1919.png"/>
       </div>
 
       <!-- Unnamed (组合) -->
-      <div id="u1921" class="ax_default ax_default_hidden" style="display:none; visibility: hidden" data-left="0" data-top="0" data-width="0" data-height="0">
+      <div id="u1921" class="ax_default" data-left="667" data-top="4180" data-width="430" data-height="850">
 
         <!-- Unnamed (组合) -->
-        <div id="u1922" class="ax_default" data-left="0" data-top="0" data-width="0" data-height="0">
+        <div id="u1922" class="ax_default" data-left="667" data-top="4180" data-width="430" data-height="850">
 
           <!-- Unnamed (组合) -->
-          <div id="u1923" class="ax_default" data-left="0" data-top="0" data-width="0" data-height="0">
+          <div id="u1923" class="ax_default" data-left="667" data-top="4180" data-width="430" data-height="850">
 
             <!-- XMLID_42_ (形状) -->
             <div id="u1924" class="ax_default _形状1" data-label="XMLID_42_">
@@ -12068,17 +12068,17 @@
       </div>
 
       <!-- Unnamed (形状) -->
-      <div id="u1944" class="ax_default box_3 ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u1944" class="ax_default box_3">
         <img id="u1944_img" class="img " src="images/首页/regen/u100.png"/>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u1945" class="ax_default box_2 ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u1945" class="ax_default box_2">
         <div id="u1945_div" class=""></div>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u1946" class="ax_default box_2 ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u1946" class="ax_default box_2">
         <div id="u1946_div" class=""></div>
         <div id="u1946_text" class="text ">
           <p style="font-size:12px;"><span style="font-size:13px;">免费（</span><span style="font-size:17px;">35</span><span style="color:#000000;">人</span><span style="font-size:17px;color:#999999;">)</span></p>
@@ -12086,7 +12086,7 @@
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u1947" class="ax_default box_2 ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u1947" class="ax_default box_2">
         <div id="u1947_div" class=""></div>
         <div id="u1947_text" class="text ">
           <p style="font-size:12px;"><span style="font-size:13px;color:#999999;">已结束</span><span style="font-size:17px;color:#999999;">(12</span><span style="color:#868686;">人</span><span style="font-size:17px;color:#999999;">)</span></p>
@@ -12094,13 +12094,13 @@
       </div>
 
       <!-- Unnamed (组合) -->
-      <div id="u1948" class="ax_default ax_default_hidden" style="display:none; visibility: hidden" data-left="0" data-top="0" data-width="0" data-height="0">
+      <div id="u1948" class="ax_default" data-left="2725" data-top="4171" data-width="430" data-height="850">
 
         <!-- Unnamed (组合) -->
-        <div id="u1949" class="ax_default" data-left="0" data-top="0" data-width="0" data-height="0">
+        <div id="u1949" class="ax_default" data-left="2725" data-top="4171" data-width="430" data-height="850">
 
           <!-- Unnamed (组合) -->
-          <div id="u1950" class="ax_default" data-left="0" data-top="0" data-width="0" data-height="0">
+          <div id="u1950" class="ax_default" data-left="2725" data-top="4171" data-width="430" data-height="850">
 
             <!-- XMLID_42_ (形状) -->
             <div id="u1951" class="ax_default _形状1" data-label="XMLID_42_">
@@ -12215,17 +12215,17 @@
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u1971" class="ax_default box_2 ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u1971" class="ax_default box_2">
         <div id="u1971_div" class=""></div>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u1972" class="ax_default refs-webm-wechat ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u1972" class="ax_default refs-webm-wechat">
         <div id="u1972_div" class=""></div>
       </div>
 
       <!-- Unnamed (组合) -->
-      <div id="u1973" class="ax_default ax_default_hidden" style="display:none; visibility: hidden" data-left="0" data-top="0" data-width="0" data-height="0">
+      <div id="u1973" class="ax_default" data-left="2751" data-top="4597" data-width="375" data-height="96">
 
         <!-- Unnamed (矩形) -->
         <div id="u1974" class="ax_default refs-webm-wechat">
@@ -12279,7 +12279,7 @@
       </div>
 
       <!-- Unnamed (组合) -->
-      <div id="u1981" class="ax_default ax_default_hidden" style="display:none; visibility: hidden" data-left="0" data-top="0" data-width="0" data-height="0">
+      <div id="u1981" class="ax_default" data-left="2751" data-top="4695" data-width="375" data-height="96">
 
         <!-- Unnamed (矩形) -->
         <div id="u1982" class="ax_default refs-webm-wechat">
@@ -12333,7 +12333,7 @@
       </div>
 
       <!-- Unnamed (组合) -->
-      <div id="u1989" class="ax_default ax_default_hidden" style="display:none; visibility: hidden" data-left="0" data-top="0" data-width="0" data-height="0">
+      <div id="u1989" class="ax_default" data-left="2751" data-top="4794" data-width="375" data-height="96">
 
         <!-- Unnamed (矩形) -->
         <div id="u1990" class="ax_default refs-webm-wechat">
@@ -12379,7 +12379,7 @@
       </div>
 
       <!-- Unnamed (组合) -->
-      <div id="u1996" class="ax_default ax_default_hidden" style="display:none; visibility: hidden" data-left="0" data-top="0" data-width="0" data-height="0">
+      <div id="u1996" class="ax_default" data-left="2751" data-top="4499" data-width="375" data-height="96">
 
         <!-- Unnamed (矩形) -->
         <div id="u1997" class="ax_default refs-webm-wechat">
@@ -12433,10 +12433,10 @@
       </div>
 
       <!-- Unnamed (组合) -->
-      <div id="u2004" class="ax_default ax_default_hidden" style="display:none; visibility: hidden" data-left="0" data-top="0" data-width="0" data-height="0">
+      <div id="u2004" class="ax_default" data-left="2751" data-top="4842" data-width="375" data-height="59">
 
         <!-- Unnamed (组合) -->
-        <div id="u2005" class="ax_default" data-left="0" data-top="0" data-width="0" data-height="0">
+        <div id="u2005" class="ax_default" data-left="2751" data-top="4842" data-width="375" data-height="59">
 
           <!-- Unnamed (矩形) -->
           <div id="u2006" class="ax_default box_3">
@@ -12485,7 +12485,7 @@
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u2013" class="ax_default box_2 ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2013" class="ax_default box_2">
         <div id="u2013_div" class=""></div>
         <div id="u2013_text" class="text ">
           <p><span>专家</span></p>
@@ -12493,7 +12493,7 @@
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u2014" class="ax_default box_2 ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2014" class="ax_default box_2">
         <div id="u2014_div" class=""></div>
         <div id="u2014_text" class="text ">
           <p><span>专家</span></p>
@@ -12501,17 +12501,17 @@
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u2015" class="ax_default box_2 ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2015" class="ax_default box_2">
         <div id="u2015_div" class=""></div>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u2016" class="ax_default box_2 ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2016" class="ax_default box_2">
         <div id="u2016_div" class=""></div>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u2017" class="ax_default box_2 ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2017" class="ax_default box_2">
         <div id="u2017_div" class=""></div>
         <div id="u2017_text" class="text ">
           <p style="font-size:12px;"><span style="font-size:13px;color:#000000;">已结束</span><span style="font-size:17px;color:#000000;">(12</span><span style="color:#000000;">人</span><span style="font-size:17px;color:#999999;">)</span></p>
@@ -12519,7 +12519,7 @@
       </div>
 
       <!-- Unnamed (组合) -->
-      <div id="u2018" class="ax_default ax_default_hidden" style="display:none; visibility: hidden" data-left="0" data-top="0" data-width="0" data-height="0">
+      <div id="u2018" class="ax_default" data-left="2751" data-top="4463" data-width="375" data-height="38">
 
         <!-- 输入框尺寸 (矩形) -->
         <div id="u2019" class="ax_default box_1" data-label="输入框尺寸">
@@ -12538,7 +12538,7 @@
       </div>
 
       <!-- Unnamed (组合) -->
-      <div id="u2022" class="ax_default ax_default_hidden" style="display:none; visibility: hidden" data-left="0" data-top="0" data-width="0" data-height="0">
+      <div id="u2022" class="ax_default" data-left="2751" data-top="4425" data-width="375" data-height="38">
 
         <!-- 输入框尺寸 (矩形) -->
         <div id="u2023" class="ax_default box_1" data-label="输入框尺寸">
@@ -12557,12 +12557,12 @@
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u2026" class="ax_default box_3 ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2026" class="ax_default box_3">
         <div id="u2026_div" class=""></div>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u2027" class="ax_default label1 ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2027" class="ax_default label1">
         <div id="u2027_div" class=""></div>
         <div id="u2027_text" class="text ">
           <p style="font-size:12px;"><span>用户库：还有 </span><span style="font-size:14px;color:#00CC00;">34 </span><span>位正在等待</span></p>
@@ -12570,10 +12570,10 @@
       </div>
 
       <!-- Unnamed (组合) -->
-      <div id="u2028" class="ax_default ax_default_hidden" style="display:none; visibility: hidden" data-left="0" data-top="0" data-width="0" data-height="0">
+      <div id="u2028" class="ax_default" data-left="693" data-top="4341" data-width="376" data-height="305">
 
         <!-- Unnamed (组合) -->
-        <div id="u2029" class="ax_default" data-left="0" data-top="0" data-width="0" data-height="0">
+        <div id="u2029" class="ax_default" data-left="693" data-top="4341" data-width="375" data-height="60">
 
           <!-- Unnamed (矩形) -->
           <div id="u2030" class="ax_default refs-webm-wechat">
@@ -12611,7 +12611,7 @@
         </div>
 
         <!-- Unnamed (组合) -->
-        <div id="u2035" class="ax_default" data-left="0" data-top="0" data-width="0" data-height="0">
+        <div id="u2035" class="ax_default" data-left="694" data-top="4402" data-width="373" data-height="60">
 
           <!-- Unnamed (矩形) -->
           <div id="u2036" class="ax_default refs-webm-wechat">
@@ -12649,10 +12649,10 @@
         </div>
 
         <!-- Unnamed (组合) -->
-        <div id="u2041" class="ax_default" data-left="0" data-top="0" data-width="0" data-height="0">
+        <div id="u2041" class="ax_default" data-left="694" data-top="4525" data-width="375" data-height="60">
 
           <!-- Unnamed (组合) -->
-          <div id="u2042" class="ax_default" data-left="0" data-top="0" data-width="0" data-height="0">
+          <div id="u2042" class="ax_default" data-left="694" data-top="4525" data-width="375" data-height="60">
 
             <!-- Unnamed (矩形) -->
             <div id="u2043" class="ax_default refs-webm-wechat">
@@ -12691,10 +12691,10 @@
         </div>
 
         <!-- Unnamed (组合) -->
-        <div id="u2048" class="ax_default" data-left="0" data-top="0" data-width="0" data-height="0">
+        <div id="u2048" class="ax_default" data-left="694" data-top="4463" data-width="375" data-height="60">
 
           <!-- Unnamed (组合) -->
-          <div id="u2049" class="ax_default" data-left="0" data-top="0" data-width="0" data-height="0">
+          <div id="u2049" class="ax_default" data-left="694" data-top="4463" data-width="375" data-height="60">
 
             <!-- Unnamed (矩形) -->
             <div id="u2050" class="ax_default refs-webm-wechat">
@@ -12733,10 +12733,10 @@
         </div>
 
         <!-- Unnamed (组合) -->
-        <div id="u2055" class="ax_default" data-left="0" data-top="0" data-width="0" data-height="0">
+        <div id="u2055" class="ax_default" data-left="694" data-top="4586" data-width="375" data-height="60">
 
           <!-- Unnamed (组合) -->
-          <div id="u2056" class="ax_default" data-left="0" data-top="0" data-width="0" data-height="0">
+          <div id="u2056" class="ax_default" data-left="694" data-top="4586" data-width="375" data-height="60">
 
             <!-- Unnamed (矩形) -->
             <div id="u2057" class="ax_default refs-webm-wechat">
@@ -12776,7 +12776,7 @@
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u2062" class="ax_default shape ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2062" class="ax_default shape">
         <div id="u2062_div" class=""></div>
         <div id="u2062_text" class="text ">
           <p style="font-size:16px;"><span style="font-size:14px;color:#363636;">用户库：</span></p><p style="font-size:14px;"><span style="color:#000000;">当科室有新用户进入且患者主动发出消息，会自动进入相应科室的用户库</span></p><p style="font-size:14px;"><span style="color:#000000;">排序按照进入用户库时间由近及远排列</span></p><p style="font-size:14px;"><span style="color:#FF0000;">同一时期刷到此用户的医生：</span></p><p style="font-size:14px;"><span style="color:#999999;">点进此用户。</span><span style="color:#000000;">弹出Toast：此患者已被其他医生锁定。</span></p><p style="font-size:14px;"><span style="color:#999999;">其他医生即使进入到患者沟通页，输入第一句话的时，</span></p><p style="font-size:14px;"><span style="color:#999999;">判断用户是否被其他医生锁定。如果被锁定。</span><span style="color:#000000;">提示Toast：此患者已被其他医生锁定。并且自动返回候诊大厅页。自动刷新用户库。</span></p><p style="font-size:14px;"><span style="color:#FF0000;">抢到此用户的医生：</span></p><p style="font-size:14px;"><span style="color:#999999;">锁定时间为10秒，超过10秒医生未沟通患者，此用户自动释放进入用户库。重新进行分配。 10秒内成功沟通者，</span></p>
@@ -12784,7 +12784,7 @@
       </div>
 
       <!-- Unnamed (连接线) -->
-      <div id="u2063" class="ax_default _连接线 ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2063" class="ax_default _连接线">
         <img id="u2063_seg0" class="img " src="images/首页/regen/u2063_seg0.png" alt="u2063_seg0"/>
         <img id="u2063_seg1" class="img " src="images/首页/regen/u2063_seg1.png" alt="u2063_seg1"/>
         <img id="u2063_seg2" class="img " src="images/首页/regen/u2063_seg2.png" alt="u2063_seg2"/>
@@ -12795,7 +12795,7 @@
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u2064" class="ax_default shape ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2064" class="ax_default shape">
         <div id="u2064_div" class=""></div>
         <div id="u2064_text" class="text ">
           <p style="font-size:16px;"><span style="color:rgba(0, 0, 0, 0.647058823529412);"><br></span></p><p style="font-size:16px;"><span style="color:rgba(0, 0, 0, 0.647058823529412);">消息页分为：</span></p><p style="font-size:14px;"><span style="color:rgba(40, 40, 40, 0.647058823529412);">候诊大厅&nbsp; 消息页（沟通中：免费&nbsp; 付费&nbsp; 已结束）主体</span></p>
@@ -12803,7 +12803,7 @@
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u2065" class="ax_default shape ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2065" class="ax_default shape">
         <div id="u2065_div" class=""></div>
         <div id="u2065_text" class="text ">
           <p style="font-size:16px;"><span style="color:rgba(0, 0, 0, 0.647058823529412);">1.消息页分为 候诊大厅&nbsp; 沟通中 已结束</span></p><p style="font-size:16px;"><span style="color:rgba(0, 0, 0, 0.647058823529412);">候诊大厅逻辑：</span></p><p style="font-size:14px;"><span style="color:rgba(94, 94, 94, 0.647058823529412);">页面下拉刷新 系统指派 用户库内容（底端上拉加载更多）</span></p><p style="font-size:14px;"><span style="color:#999999;"><br></span></p>
@@ -12811,7 +12811,7 @@
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u2066" class="ax_default shape ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2066" class="ax_default shape">
         <div id="u2066_div" class=""></div>
         <div id="u2066_text" class="text ">
           <p style="font-size:16px;"><span style="color:rgba(0, 0, 0, 0.647058823529412);">候诊大厅：</span></p><p style="font-size:16px;"><span style="font-size:14px;color:rgba(40, 40, 40, 0.647058823529412);">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 显示候诊大厅等候人数（系统指派+用户库），点击跳转候诊大厅页</span></p><p style="font-size:14px;"><span style="color:#999999;"><br></span></p><p style="font-size:14px;"><span style="color:#999999;"><br></span></p>
@@ -12819,7 +12819,7 @@
       </div>
 
       <!-- Unnamed (椭圆形) -->
-      <div id="u2067" class="ax_default refs-webm-wechat ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2067" class="ax_default refs-webm-wechat">
         <img id="u2067_img" class="img " src="images/首页/regen/u44.png"/>
         <div id="u2067_text" class="text ">
           <p><span>23</span></p>
@@ -12827,7 +12827,7 @@
       </div>
 
       <!-- Unnamed (连接线) -->
-      <div id="u2068" class="ax_default _连接线 ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2068" class="ax_default _连接线">
         <img id="u2068_seg0" class="img " src="images/首页/regen/u2068_seg0.png" alt="u2068_seg0"/>
         <img id="u2068_seg1" class="img " src="images/首页/regen/u2068_seg1.png" alt="u2068_seg1"/>
         <img id="u2068_seg2" class="img " src="images/首页/regen/u2068_seg2.png" alt="u2068_seg2"/>
@@ -12838,7 +12838,7 @@
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u2069" class="ax_default shape ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2069" class="ax_default shape">
         <div id="u2069_div" class=""></div>
         <div id="u2069_text" class="text ">
           <p style="font-size:16px;"><span style="color:rgba(0, 0, 0, 0.647058823529412);">消息页：沟通中：</span></p><p style="font-size:14px;"><span style="color:rgba(40, 40, 40, 0.647058823529412);">沟通中显示正在沟通的人数。有新消息在tab栏提示消息数量。</span></p><p style="font-size:16px;"><span style="font-size:14px;color:rgba(40, 40, 40, 0.647058823529412);">沟通中分为 </span><span style="color:#00CC00;">免费 付费</span><span style="color:rgba(40, 40, 40, 0.647058823529412);"> </span><span style="font-size:14px;color:rgba(40, 40, 40, 0.647058823529412);">两种用户</span></p><p style="font-size:14px;"><span style="color:rgba(40, 40, 40, 0.647058823529412);">免费用户：</span></p><p style="font-size:14px;"><span style="color:rgba(40, 40, 40, 0.647058823529412);">免费用户消息排序规则（）：</span></p><p style="font-size:14px;"><span style="color:rgba(255, 0, 0, 0.647058823529412);">首先筛选出有沟通轮次的患者，按照聊天时间倒序排列。</span></p><p style="font-size:14px;"><span style="color:rgba(255, 0, 0, 0.647058823529412);">再排列没有沟通轮次的患者，按照聊天时间倒序排列</span></p><p style="font-size:14px;"><span style="color:rgba(40, 40, 40, 0.647058823529412);">当免费轮次剩余1轮时，轮次为红色凸现，字号变大</span></p><p style="font-size:14px;"><span style="color:rgba(40, 40, 40, 0.647058823529412);">当大于1轮时，字体颜色普通。</span></p><p style="font-size:14px;"><span style="color:rgba(40, 40, 40, 0.647058823529412);">付费用户：</span></p><p style="font-size:14px;"><span style="color:rgba(40, 40, 40, 0.647058823529412);">显示付费金额。</span></p><p style="font-size:14px;"><span style="color:rgba(40, 40, 40, 0.647058823529412);"><br></span></p><p style="font-size:14px;"><span style="color:rgba(40, 40, 40, 0.647058823529412);">当有新消息时。</span></p><p style="font-size:14px;"><span style="color:rgba(40, 40, 40, 0.647058823529412);">免费和付费标签栏会出现未读消息提示。当进入消息页自动减掉相应消息数量</span></p><p style="font-size:14px;"><span style="color:rgba(255, 0, 0, 0.647058823529412);">注意：如果新用户自动发起和非推荐医生沟通，且非推荐医生比推荐医生回复更早。则在非推荐医生聊天页自动删除此患者，反之在推荐医生聊天页自动删除此患者</span></p><p style="font-size:14px;"><span style="color:rgba(40, 40, 40, 0.647058823529412);"><br></span></p><p style="font-size:16px;"><span style="color:rgba(0, 0, 0, 0.647058823529412);"><br></span></p><p style="font-size:14px;"><span style="color:#999999;"><br></span></p><p style="font-size:14px;"><span style="color:#999999;"><br></span></p>
@@ -12846,7 +12846,7 @@
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u2070" class="ax_default refs-webm-wechat ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2070" class="ax_default refs-webm-wechat">
         <div id="u2070_div" class=""></div>
         <div id="u2070_text" class="text ">
           <p><span>剩余1轮</span></p>
@@ -12854,7 +12854,7 @@
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u2071" class="ax_default refs-webm-wechat ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2071" class="ax_default refs-webm-wechat">
         <div id="u2071_div" class=""></div>
         <div id="u2071_text" class="text ">
           <p><span>剩余3轮</span></p>
@@ -12862,7 +12862,7 @@
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u2072" class="ax_default refs-webm-wechat ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2072" class="ax_default refs-webm-wechat">
         <div id="u2072_div" class=""></div>
         <div id="u2072_text" class="text ">
           <p><span>剩余1轮</span></p>
@@ -12870,7 +12870,7 @@
       </div>
 
       <!-- Unnamed (连接线) -->
-      <div id="u2073" class="ax_default _连接线 ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2073" class="ax_default _连接线">
         <img id="u2073_seg0" class="img " src="images/首页/regen/u2073_seg0.png" alt="u2073_seg0"/>
         <img id="u2073_seg1" class="img " src="images/首页/regen/u2073_seg1.png" alt="u2073_seg1"/>
         <img id="u2073_seg2" class="img " src="images/首页/regen/u2073_seg2.png" alt="u2073_seg2"/>
@@ -12881,7 +12881,7 @@
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u2074" class="ax_default shape ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2074" class="ax_default shape">
         <div id="u2074_div" class=""></div>
         <div id="u2074_text" class="text ">
           <p style="font-size:16px;"><span style="color:rgba(0, 0, 0, 0.647058823529412);">消息页：已结束：</span></p><p style="font-size:14px;"><span style="color:rgba(40, 40, 40, 0.647058823529412);">沟通轮次完毕 | 沟通时间到 | 新用户阶段用户成功和其他医生沟通成功 </span></p><p style="font-size:14px;"><span style="color:rgba(40, 40, 40, 0.647058823529412);">会自动进入已结束</span></p><p style="font-size:14px;"><span style="color:rgba(40, 40, 40, 0.647058823529412);"><br></span></p><p style="font-size:14px;"><span style="color:rgba(40, 40, 40, 0.647058823529412);"><br></span></p><p style="font-size:16px;"><span style="color:rgba(0, 0, 0, 0.647058823529412);"><br></span></p><p style="font-size:14px;"><span style="color:#999999;"><br></span></p><p style="font-size:14px;"><span style="color:#999999;"><br></span></p>
@@ -12889,7 +12889,7 @@
       </div>
 
       <!-- Unnamed (椭圆形) -->
-      <div id="u2075" class="ax_default refs-webm-wechat ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2075" class="ax_default refs-webm-wechat">
         <img id="u2075_img" class="img " src="images/首页/regen/u44.png"/>
         <div id="u2075_text" class="text ">
           <p><span>23</span></p>
@@ -12897,12 +12897,12 @@
       </div>
 
       <!-- Unnamed (椭圆形) -->
-      <div id="u2076" class="ax_default refs-webm-wechat ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2076" class="ax_default refs-webm-wechat">
         <img id="u2076_img" class="img " src="images/首页/regen/u1917.png"/>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u2077" class="ax_default box_2 ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2077" class="ax_default box_2">
         <div id="u2077_div" class=""></div>
         <div id="u2077_text" class="text ">
           <p style="font-size:12px;"><span style="font-size:13px;color:#999999;">付费</span><span style="font-size:17px;color:#999999;">(12</span><span style="color:#868686;">人</span><span style="font-size:17px;color:#999999;">)</span></p>
@@ -12910,12 +12910,12 @@
       </div>
 
       <!-- Unnamed (椭圆形) -->
-      <div id="u2078" class="ax_default refs-webm-wechat ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2078" class="ax_default refs-webm-wechat">
         <img id="u2078_img" class="img " src="images/首页/regen/u1917.png"/>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u2079" class="ax_default box_2 ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2079" class="ax_default box_2">
         <div id="u2079_div" class=""></div>
         <div id="u2079_text" class="text ">
           <p style="font-size:12px;"><span style="font-size:13px;">付费</span><span style="font-size:17px;">(35</span><span style="color:#000000;">人</span><span style="font-size:17px;color:#999999;">)</span></p>
@@ -12923,7 +12923,7 @@
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u2080" class="ax_default box_2 ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2080" class="ax_default box_2">
         <div id="u2080_div" class=""></div>
         <div id="u2080_text" class="text ">
           <p style="font-size:12px;"><span style="font-size:13px;color:#999999;">免费</span><span style="font-size:17px;color:#999999;">(12</span><span style="color:#868686;">人</span><span style="font-size:17px;color:#999999;">)</span></p>
@@ -12931,7 +12931,7 @@
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u2081" class="ax_default box_2 ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2081" class="ax_default box_2">
         <div id="u2081_div" class=""></div>
         <div id="u2081_text" class="text ">
           <p style="font-size:12px;"><span style="font-size:13px;color:#999999;">已结束</span><span style="font-size:17px;color:#999999;">(12</span><span style="color:#868686;">人</span><span style="font-size:17px;color:#999999;">)</span></p>
@@ -12939,17 +12939,17 @@
       </div>
 
       <!-- Unnamed (椭圆形) -->
-      <div id="u2082" class="ax_default refs-webm-wechat ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2082" class="ax_default refs-webm-wechat">
         <img id="u2082_img" class="img " src="images/首页/regen/u1917.png"/>
       </div>
 
       <!-- Unnamed (椭圆形) -->
-      <div id="u2083" class="ax_default refs-webm-wechat ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2083" class="ax_default refs-webm-wechat">
         <img id="u2083_img" class="img " src="images/首页/regen/u1917.png"/>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u2084" class="ax_default box_2 ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2084" class="ax_default box_2">
         <div id="u2084_div" class=""></div>
         <div id="u2084_text" class="text ">
           <p style="font-size:12px;"><span style="font-size:13px;color:#999999;">免费</span><span style="font-size:17px;color:#999999;">(12</span><span style="color:#868686;">人</span><span style="font-size:17px;color:#999999;">)</span></p>
@@ -12957,7 +12957,7 @@
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u2085" class="ax_default box_2 ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2085" class="ax_default box_2">
         <div id="u2085_div" class=""></div>
         <div id="u2085_text" class="text ">
           <p style="font-size:12px;"><span style="font-size:13px;color:#999999;">付费</span><span style="font-size:17px;color:#999999;">(12</span><span style="color:#868686;">人</span><span style="font-size:17px;color:#999999;">)</span></p>
@@ -12965,35 +12965,35 @@
       </div>
 
       <!-- Unnamed (椭圆形) -->
-      <div id="u2086" class="ax_default refs-webm-wechat ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2086" class="ax_default refs-webm-wechat">
         <img id="u2086_img" class="img " src="images/首页/regen/u1917.png"/>
       </div>
 
       <!-- Unnamed (椭圆形) -->
-      <div id="u2087" class="ax_default refs-webm-wechat ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2087" class="ax_default refs-webm-wechat">
         <img id="u2087_img" class="img " src="images/首页/regen/u1917.png"/>
       </div>
 
       <!-- Unnamed (图片) -->
-      <div id="u2088" class="ax_default _图片1 ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2088" class="ax_default _图片1">
         <img id="u2088_img" class="img " src="images/首页/regen/u1647.png"/>
       </div>
 
       <!-- Unnamed (图片) -->
-      <div id="u2089" class="ax_default _图片1 ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2089" class="ax_default _图片1">
         <img id="u2089_img" class="img " src="images/首页/regen/u1647.png"/>
       </div>
 
       <!-- Unnamed (图片) -->
-      <div id="u2090" class="ax_default _图片1 ax_default_hidden" style="display:none; visibility: hidden">
+      <div id="u2090" class="ax_default _图片1">
         <img id="u2090_img" class="img " src="images/首页/regen/u1647.png"/>
       </div>
 
       <!-- Unnamed (组合) -->
-      <div id="u2091" class="ax_default ax_default_hidden" style="display:none; visibility: hidden" data-left="0" data-top="0" data-width="0" data-height="0">
+      <div id="u2091" class="ax_default" data-left="694" data-top="4647" data-width="375" data-height="60">
 
         <!-- Unnamed (组合) -->
-        <div id="u2092" class="ax_default" data-left="0" data-top="0" data-width="0" data-height="0">
+        <div id="u2092" class="ax_default" data-left="694" data-top="4647" data-width="375" data-height="60">
 
           <!-- Unnamed (矩形) -->
           <div id="u2093" class="ax_default refs-webm-wechat">
@@ -13032,10 +13032,10 @@
       </div>
 
       <!-- Unnamed (组合) -->
-      <div id="u2098" class="ax_default ax_default_hidden" style="display:none; visibility: hidden" data-left="0" data-top="0" data-width="0" data-height="0">
+      <div id="u2098" class="ax_default" data-left="694" data-top="4709" data-width="375" data-height="60">
 
         <!-- Unnamed (组合) -->
-        <div id="u2099" class="ax_default" data-left="0" data-top="0" data-width="0" data-height="0">
+        <div id="u2099" class="ax_default" data-left="694" data-top="4709" data-width="375" data-height="60">
 
           <!-- Unnamed (矩形) -->
           <div id="u2100" class="ax_default refs-webm-wechat">
@@ -13074,10 +13074,10 @@
       </div>
 
       <!-- Unnamed (组合) -->
-      <div id="u2105" class="ax_default ax_default_hidden" style="display:none; visibility: hidden" data-left="0" data-top="0" data-width="0" data-height="0">
+      <div id="u2105" class="ax_default" data-left="693" data-top="4771" data-width="375" data-height="60">
 
         <!-- Unnamed (组合) -->
-        <div id="u2106" class="ax_default" data-left="0" data-top="0" data-width="0" data-height="0">
+        <div id="u2106" class="ax_default" data-left="693" data-top="4771" data-width="375" data-height="60">
 
           <!-- Unnamed (矩形) -->
           <div id="u2107" class="ax_default refs-webm-wechat">
@@ -13116,7 +13116,7 @@
       </div>
 
       <!-- Unnamed (组合) -->
-      <div id="u2112" class="ax_default ax_default_hidden" style="display:none; visibility: hidden" data-left="0" data-top="0" data-width="0" data-height="0">
+      <div id="u2112" class="ax_default" data-left="1814" data-top="4303" data-width="375" data-height="75">
 
         <!-- Unnamed (矩形) -->
         <div id="u2113" class="ax_default box_21">
@@ -13146,7 +13146,7 @@
       </div>
 
       <!-- Unnamed (组合) -->
-      <div id="u2117" class="ax_default ax_default_hidden" style="display:none; visibility: hidden" data-left="0" data-top="0" data-width="0" data-height="0">
+      <div id="u2117" class="ax_default" data-left="2293" data-top="4306" data-width="375" data-height="68">
 
         <!-- Unnamed (矩形) -->
         <div id="u2118" class="ax_default box_21">
@@ -13176,7 +13176,7 @@
       </div>
 
       <!-- Unnamed (组合) -->
-      <div id="u2122" class="ax_default ax_default_hidden" style="display:none; visibility: hidden" data-left="0" data-top="0" data-width="0" data-height="0">
+      <div id="u2122" class="ax_default" data-left="2751" data-top="4313" data-width="375" data-height="68">
 
         <!-- Unnamed (矩形) -->
         <div id="u2123" class="ax_default box_21">
